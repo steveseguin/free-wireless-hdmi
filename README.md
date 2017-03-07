@@ -3,6 +3,8 @@ Turn your wifi-enabled Camera into a wireless webcam for youtube, etc.
 
 This initial software release is designed for LUMIX cameras that have wifi-enabled (G85 in particular, but also GX80, GH4, GH3, and perhasp the GH5?)  It can be extended to support many other wifi-enabled cameras -- from GoPros to Sony AR7s.
 
+sample result and release video: https://www.youtube.com/watch?v=fhfLvUgQ9SU
+
 To use this,
 install the required software (python + numpy + openCV + pygi .. ) on a computer that is connected to a router.
 
