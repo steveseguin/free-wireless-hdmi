@@ -7,11 +7,12 @@ sample result and release video: https://www.youtube.com/watch?v=fhfLvUgQ9SU
 
 ## To install this
 
-** updated option ** if using the new window display option instead, just Python 3.x, Numpy, and Pillow needed. Use the `windowcap.py` script.
+#### Updated option
+if using the new window display option instead, just Python 3.x, Numpy, and Pillow needed. Use the `windowcap.py` script.
 
 This should work for Windows users, without needing GI or OpenCV, but rather just the accessible Pillow addon for Python 3.  The code is also updated for Python 3 support
 
-** [obsolete install option] **
+#### [obsolete install option]
 install the required software (python 2.7 + numpy + openCV + pygi .. ) on a computer that is connected to a router.
 
 for windows users, the following links provide the files need needed; things are relatively easy to install if you spend a few minutes on google
