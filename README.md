@@ -1,4 +1,4 @@
-# free-wireless-hdmi
+# Free Wireless HDMI for Panasonic Lumix cameras (g85 tested)
 Turn your wifi-enabled Camera into a wireless webcam for youtube, obs, etc.
 
 This initial software release is designed for LUMIX cameras that have wifi-enabled (G85 in particular, but also GX80, GH4, GH3, and perhasp the GH5?)  It can be extended to support many other wifi-enabled cameras -- from GoPros to Sony AR7s, but those are not supported atm.
