@@ -58,7 +58,7 @@ def keepalive(MY_IP, THEIR_IP):
 			tcpsock.sendto("GET /cam.cgi?mode=startstream&value=5555 HTTP/1.1\nHost: "+MY_IP+"\n\nUser-Agent:Mozilla 5.0\n", (MY_IP, 80))
 			response = tcpsock.recv(1024)
 			time.sleep( 8 )
-			print "keep alive"
+			print("keep alive")
 		except:
 			tcpsock.connect(("192.168.1.222", 80))
 	
@@ -85,5 +85,5 @@ while (1==1):
 	#final = time.time()
 	#total = total*0.8 + (final - begin)*.2
 	#print "time",str(1.0/total)
-print "EXIT"
+print("EXIT")
 sys.exit()
