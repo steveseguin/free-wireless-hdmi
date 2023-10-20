@@ -19,6 +19,7 @@ import binascii
 import threading
 import time
 import sys
+from io import BytesIO
 
 UDP_PORT = 5555
 start = binascii.unhexlify(''.join('FF D8'.split()))
@@ -29,6 +30,11 @@ sock.bind((MY_IP, UDP_PORT))
 
 tcpsock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
+def bytes_to_ndarray(bytes):
+    bytes_io = bytearray(bytes)
+    img = Image.open(BytesIO(bytes_io))
+    return np.array(img)
+  
 def keepalive(MY_IP, THEIR_IP):
     while True:
         try:
@@ -49,7 +55,8 @@ while (1==1):
     data = data.split(start)[1].split(end)[0]
     data = start+data+end
     data = np.array(np.frombuffer(data, np.uint8))
-    im = Image.fromarray(data[:, :, ::-1])
+    data = bytearray(data)
+    im = Image.open(BytesIO(data))
     im.show()
 
 print("EXITING")
