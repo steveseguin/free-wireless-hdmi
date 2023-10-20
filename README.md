@@ -15,9 +15,11 @@ This should work for Windows users, without needing GI or OpenCV, but rather jus
 install the required software (python 2.7 + numpy + openCV + pygi .. ) on a computer that is connected to a router.
 
 for windows users, the following links provide the files need needed; things are relatively easy to install if you spend a few minutes on google
-## https://www.python.org/download/releases/2.7/
-## http://www.lfd.uci.edu/~gohlke/pythonlibs/
-## https://sourceforge.net/projects/pygobjectwin32/files/ ; Install pygi-aio-xxx ; install anything to do with gst-plugins or gstreamer
+```
+https://www.python.org/download/releases/2.7/
+http://www.lfd.uci.edu/~gohlke/pythonlibs/
+https://sourceforge.net/projects/pygobjectwin32/files/ ; Install pygi-aio-xxx ; install anything to do with gst-plugins or gstreamer
+```
 
 ## To set it up
 
