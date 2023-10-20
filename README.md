@@ -35,9 +35,12 @@ If pushing to Youtube, update the stream key in the publishRTMP.py to match your
 
 ## run the script:
 
-`python windowcap.py.py` if using the window capture method
+`python windowcap.py` if using the window capture method
+
 or 
+
 `python publishRTMP.py` if publishing via rtmp (obsolete option)
+
 
 Your camera will likely output a 640x360 or 640x480 stream; this is typically used for previewing the camera on your smartphone. It is a series of jpeg images, streaming in fast succession. This program simply grabs them out of the air and turns them into a video, adds audio, and pushes them to the internet as a h264 video stream.  
 
