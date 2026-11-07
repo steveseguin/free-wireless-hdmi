@@ -14,7 +14,7 @@ THEIR_IP = "192.168.1.222"  ## THIS IS THE IP ADDRESS OF THE CAMERA
 
 import numpy as np
 import socket
-import PIL
+from PIL import Image
 import binascii
 import threading
 import time
@@ -38,12 +38,12 @@ def bytes_to_ndarray(bytes):
 def keepalive(MY_IP, THEIR_IP):
     while True:
         try:
-            tcpsock.sendto("GET /cam.cgi?mode=startstream&value=5555 HTTP/1.1\nHost: "+MY_IP+"\n\nUser-Agent:Mozilla 5.0\n", (MY_IP, 80))
+            tcpsock.sendall(("GET /cam.cgi?mode=startstream&value=5555 HTTP/1.1\r\nHost: "+THEIR_IP+"\r\nUser-Agent:Mozilla 5.0\r\n\r\n").encode("ascii"))
             response = tcpsock.recv(1024)
             time.sleep( 8 )
             print("keep alive")
         except:
-            tcpsock.connect(("192.168.1.222", 80))
+            tcpsock.connect((THEIR_IP, 80))
 
 
 thread = threading.Thread(target=keepalive, args=(MY_IP,THEIR_IP,))

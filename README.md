@@ -12,6 +12,11 @@ if using the new window display option instead, just Python 3.x, Numpy, and Pill
 
 This should work for Windows users, without needing GI or OpenCV, but rather just the accessible Pillow addon for Python 3.  The code is also updated for Python 3 support
 
+#### Offline checks
+
+With Python 3, NumPy and Pillow installed, run `python3 -m unittest discover -s tests -v`.
+These checks cover JPEG decoding and the camera-start request without contacting a camera or opening an image viewer.
+
 #### [obsolete install option]
 install the required software (python 2.7 + numpy + openCV + pygi .. ) on a computer that is connected to a router.
 
